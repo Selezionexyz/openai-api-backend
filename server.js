@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 
 app.post("/chat", async (req, res) => {
   const userMessage = req.body.message;
-npm install cors
+
   try {
     const response = await axios.post("https://api.openai.com/v1/chat/completions", {
       model: "gpt-3.5-turbo",
